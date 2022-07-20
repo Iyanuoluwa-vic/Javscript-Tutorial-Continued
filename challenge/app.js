@@ -17,6 +17,7 @@ console.log(fullName("John", "Doe"));
 console.log(fullName("Doe", "John"));
 
 console.log("\n");
+console.log(" refactor to object parameter");
 
 // 7. refactor to object parameter  this allows us to pass in an object with the properties we want to use by calling the property name
 
@@ -25,3 +26,27 @@ function fullName1({ firstName, lastName }) {
   return together;
 }
 console.log(fullName1({ lastName: "Mayer", firstName: "John" }));
+
+console.log("\n");
+console.log("Arrays and for loop");
+
+// arrays and for loop
+// create name and lastname combine the each name in the array with the lastname
+
+// name["james" "faith"]
+// lastname "mik"
+
+// solution-"james mik" "faith mik"
+
+const name = ["Iyanu", "Victor", "James", "sarah"];
+const lastName = "Adeyeri";
+
+let newArray = [];
+
+for (let i = 0; i < name.length; i++) {
+  let fullName = `${name[i]} ${lastName}`;
+
+  newArray.push(fullName);
+}
+
+console.log(newArray);

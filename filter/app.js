@@ -9,4 +9,8 @@ const ageGreater = people.filter(function (people) {
   return people.age >= 13;
 });
 
+// return all the new array
 console.log(ageGreater);
+
+// return a specific opart of the array
+console.log(ageGreater[0]);

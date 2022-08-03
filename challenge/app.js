@@ -74,3 +74,21 @@ console.log(total);
 
 total = calculateTotal(food);
 console.log(total);
+
+// #### Create Students Array
+
+// 1. setup students array with 5 students
+//    {
+//    id: 1,
+//    name: 'peter',
+//    score: 80,
+//    favoriteSubject: 'math',
+//    },
+
+const students = [
+  { id: 1, name: "peter", score: 80, favoriteSubject: "math" },
+  { id: 2, name: "james", score: 60, favoriteSubject: "physics" },
+  { id: 3, name: "sarah", score: 20, favoriteSubject: "weaving" },
+  { id: 4, name: "lil", score: 30, favoriteSubject: "chemsitry" },
+  { id: 5, name: "mat", score: 110, favoriteSubject: "bio" },
+];

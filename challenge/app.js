@@ -156,3 +156,22 @@ console.log(totals);
 // or
 totals.art = "some values";
 console.log(totals);
+
+// #### survey
+
+// 1. list favorite subjects with reduce
+//    {
+//    english: 1
+//    history: 1
+//    math: 3
+//    }
+// 2. assign to survey and log
+
+const survey = students.reduce(function (survey, students) {
+  const favoriteSub = students.favoriteSubject;
+  survey[favoriteSub] = 1;
+
+  return survey;
+}, {});
+
+console.log(survey);

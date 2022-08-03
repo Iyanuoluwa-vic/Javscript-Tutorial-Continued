@@ -131,3 +131,15 @@ const specficId = students.find(function (students) {
 });
 
 console.log(specficId);
+
+// #### averageScore
+
+// 1. sum up all student.score values with reduce
+// 2. divide by the length of the students array
+// 3. assign to 'averageScore' and log
+const sumScore = students.reduce(function (cumTotaL, curr) {
+  cumTotaL += curr.score;
+  return cumTotaL;
+}, 0);
+
+console.log(sumScore);

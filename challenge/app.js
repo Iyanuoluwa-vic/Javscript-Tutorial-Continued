@@ -137,9 +137,22 @@ console.log(specficId);
 // 1. sum up all student.score values with reduce
 // 2. divide by the length of the students array
 // 3. assign to 'averageScore' and log
-const sumScore = students.reduce(function (cumTotaL, curr) {
-  cumTotaL += curr.score;
-  return cumTotaL;
-}, 0);
+const averageScore =
+  students.reduce(function (cumTotaL, curr) {
+    cumTotaL += curr.score;
+    return cumTotaL;
+  }, 0) / students.length;
 
-console.log(sumScore);
+console.log(averageScore);
+
+// square bracket notation
+//a way to add value to object
+const subject = "art";
+const totals = {};
+totals[subject] = "some value;";
+
+console.log(totals);
+
+// or
+totals.art = "some values";
+console.log(totals);

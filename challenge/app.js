@@ -120,3 +120,14 @@ const scoreGreater = students.filter(function (students) {
 });
 
 console.log(scoreGreater);
+
+// #### specificId
+
+// 1. find specific id in array
+// 2. assign to 'specificId' variable and log
+
+const specficId = students.find(function (students) {
+  return students.id == 1;
+});
+
+console.log(specficId);

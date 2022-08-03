@@ -92,3 +92,16 @@ const students = [
   { id: 4, name: "lil", score: 30, favoriteSubject: "chemsitry" },
   { id: 5, name: "mat", score: 110, favoriteSubject: "bio" },
 ];
+
+// #### updatedStudents
+
+// 1. add role:'student' property to each object
+//    using MAP method
+// 2. assign to 'updatedStudents' variable and log
+
+const newStudent = students.map(function (students) {
+  students.role = "student";
+  return students;
+});
+
+console.log(newStudent);
